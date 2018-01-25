@@ -257,6 +257,7 @@ def list_project_buckets(project_name) :
     for bucket in storage_client.list_buckets():
         print(bucket)
 
+
 if __name__ == '__main__':
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "e:\\xyj\\journal\\_all.blue.solutions\\google.service.account\\james-freeswtich-gsr-f2fafcbb54f6.json"
     print("env GOOGLE_APPLICATION_CREDENTIALS : ", os.environ["GOOGLE_APPLICATION_CREDENTIALS"])
