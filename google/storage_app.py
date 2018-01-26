@@ -271,10 +271,11 @@ if __name__ == '__main__':
     if True :
         import time
         print("begin : ", time.time())
-        filename = 'e:\\tmp\\dwhelper\\out.wav'
+        # filename = 'e:\\tmp\\dwhelper\\out.wav'
+        filename = 'e:\\tmp\\dwhelper\\out2.wav'
         total_bytes = os.path.getsize(filename)
-        print("upload file %s to bucket, size %d"%(filename, total_bytes))
-        upload_blob('freeswitch-gsr', 'e:\\tmp\\dwhelper\\out.wav', 'out.wav')
+        print("upload file %s to bucket, size %d to %s"%(filename, total_bytes, os.path.basename(filename)))
+        upload_blob('freeswitch-gsr', filename, os.path.basename(filename))
         print("end : ", time.time())
 
     if False :

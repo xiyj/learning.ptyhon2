@@ -112,6 +112,8 @@ if __name__ == '__main__':
 
         adc, project = google.auth.default()
         print("google auth, adc %s, project %s"%(adc, project))
-        transcribe_gcs('gs://freeswitch-gsr/out.wav')
+        # transcribe_gcs('gs://freeswitch-gsr/out.wav')
+        # transcribe_gcs('gs://freeswitch-gsr/gsr1.wav')
+        transcribe_gcs('gs://freeswitch-gsr/out2.wav')
         print('done')
 
